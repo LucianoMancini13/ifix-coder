@@ -1,0 +1,105 @@
+/* reseteo por defecto los estilos del navegador*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+}
+
+.contenedor1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../210995.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header {
+    background: black;
+    background: linear-gradient(180deg, rgba(0, 0, 0), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20%;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+
+
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: end;
+    padding-right: 50px;
+
+
+}
+
+.nav ul li {
+    padding-left: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 24px;
+}
+
+.enlace {
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.enlace:hover {
+    background-color: rgb(106, 106, 106);
+    transition: 0.3s;
+}
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner_textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 50px;
+}
+
+.banner_textos h1 {
+    color: white;
+    font-size: 120px;
+    text-align: center;
+}
+
+.banner_textos p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.banner_textos a {}
