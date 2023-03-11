@@ -6,12 +6,12 @@
 
 .main {
     width: 100%;
+
 }
 
 .contenedor1 {
     background-image: url(../210995.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 
 }
@@ -35,27 +35,38 @@
     width: 80%;
     display: flex;
     justify-content: end;
+}
+
+.toggle {
+    background: none;
+    color: white;
+    padding-right: 20px;
+    border: none;
+    flex-direction: row;
+
 
 }
 
+
 @media (max-width: 768px) {
-    body {
+
+
+    .nav {
+        top: 0;
+        left: 0;
+        position: absolute;
         background-color: black;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        ;
     }
 
     .nav ul {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        
-        margin-right: 20px;
-        background-color: black;
-        position: fixed;
-        left: 0;
-        top: 0px;
-        width: 100%;
-        padding: 0;
-        height: 100%;
-        overflow-y: auto;
+
     }
 
 }
@@ -101,10 +112,8 @@
 .boton:hover {
     background-color: #3e3e3e;
     transition: 0.3s;
-
+    padding: 8px 10px;
 }
-
-
 
 .banner {
     width: 100%;
@@ -119,14 +128,48 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 50px 90px;
     overflow: hidden;
 }
 
 .banner_textos h1 {
     color: white;
-    font-size: 120px;
+    font-size: 180px;
     text-align: center;
+    padding: 0px 0px;
+}
+
+@media (max-width: 1600px) {
+
+    .banner_textos h1 {
+        font-size: 160px;
+    }
+
+    .banner_textos p {
+        font-size: 10px;
+
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .banner_textos h1 {
+        font-size: 130px;
+    }
+}
+
+@media (max-width: 1230px) {
+
+    .banner_textos h1 {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 1060px) {
+
+    .banner_textos h1 {
+        font-size: 90px;
+    }
 }
 
 .banner_textos p {
