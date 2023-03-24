@@ -6,64 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockburger - Contactanos</title>
-    <link rel="icon" href="./img/burger_logo-ico.ico">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./img/style/style.css">
+    <link rel="icon" href="../img/burger_logo-ico.ico">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../img/style/style.css">
 
 </head>
+<section class="pagina_contacto">
 
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="./index.html"><img src="./img/burger_logo.png" width="60" alt="Logo"></a>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/burger_logo.png" width="60" alt="Logo"></a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
+                    <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
+                    <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
+                    <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="web_contact">Contactanos</h1>
+        <section class="contacto">
+            <div>
+                <img src="../img/Charly-telefono.jpg" alt="imagen contactanos">
+            </div>
+
+            <fieldset>
+                <label for="nombre">Nombre/s y Apellido/s</label><br>
+                <input type="text" id="nombre">
+                <br>
+                <label for="mail">Correo electrónico</label><br>
+                <input type="mail" id="mail">
+                <br>
+                <label for="mensaje">Dejanos tu mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </section>
+    </body>
+
+    <footer>
+        <div class="redes">
+            <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
+            <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
+            <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="./pages/productos.html" class="enlace">Productos</a></li>
-                <li><a href="./pages/nosotros.html" class="enlace">Nosotros</a></li>
-                <li><a href="./pages/tiendas.html" class="enlace">Tiendas</a></li>
-                <li><a href="./pages/contactanos.html" class="enlace">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
+        <div>
+            <button type="button">SUSCRIBETE</button>
+        </div>
 
-    <h1>Contactanos</h1>
-    <div>
-        <img src="../img/Charly-telefono.jpg" alt="imagen contactanos">
-    </div>
-
-    <br>
-    <fieldset>
-        <label for="nombre">Nombre/s y Apellido/s</label>
-        <input type="text" id="nombre">
-        <br>
-        <label for="mail">Correo electrónico</label>
-        <input type="mail" id="mail">
-        <br>
-        <label for="mensaje">Dejanos tu mensaje</label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar">
-    </fieldset>
-
-
-</body>
-<footer>
-
-    <div>
-        <h3>SUSCRIBETE</h3>
-    </div>
-
-    <div>
-        <ul>
-            <li>Facebook</li>
-            <li>Instagram</li>
-            <li>Twitter</li>
-        </ul>
-    </div>
-
-    <p>2023 Rockburger. Todos los derechos reservados.</p>
-</footer>
-
+    </footer>
+</section>
 
 </html>
