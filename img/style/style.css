@@ -285,9 +285,9 @@ footer button {
     text-align: center;
 }
 
-.quedicen{
-font-size: 60px;
-color: white;
+.quedicen {
+    font-size: 60px;
+    color: white;
 }
 
 .texto {
@@ -304,11 +304,26 @@ h3 {
 }
 
 /*Pagina Productos*/
-
-.carousel-inner{
+.pagina_productos {
     display: flex;
-    justify-content: center;
-    height:600px;
-    width:100vh
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #df2d2d;
+    background-size: cover;
+
+}
+.mainprod{
+   display: flex;
+   flex-direction: row;
+}
+.productos {
+    color: white;
+    font-size: 60px;
+    margin-left: 50px;
+
+}
+
+.carousel-item :active{
+   background-image: 100px;
 }
 

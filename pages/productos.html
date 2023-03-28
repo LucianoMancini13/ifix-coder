@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rockburger - Productos</title>
+    <link rel="icon" href="../img/burger_logoico.ico">
     <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../img/style/style.css">
 
 </head>
-
-
-<section>
+<section class="pagina_productos">
 
     <body>
         <header class="header">
             <div class="logo">
-                <a href="../index.html"><img src="../img/burger_logo.png" width="60" alt="Logo"></a>
+                <a href="../index.html"><img src="../img/burger_logo.png" width="80" alt="Logo"></a>
             </div>
+
             <nav class="nav">
+                <button class="toggle">
+                    <img src="./img/menu2.png" width="35px" height="25px" alt="menu"></a>
+                </button>
                 <ul>
                     <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
                     <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
@@ -27,48 +30,52 @@
                     <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
                 </ul>
             </nav>
+
         </header>
 
         <h1 class="productos">Productos</h1>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/BBQ.png" class="d-block w-100" alt="BBQ">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/morada.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/pay.png" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
 
+        <main class="mainprod">
+        
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/morada.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/BBQ.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/pay.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </main>
 
         <p>Descripción de la hamburguesa</p>
 
-
-    </body>
-    <footer>
-        <div class="redes">
-            <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
-            <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
-            <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
-        </div>
-        <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
-        <div>
-            <button type="button">SUSCRIBETE</button>
-        </div>
-
-    </footer>
+        <footer class="footerprod">
+            <div class="redes">
+                <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
+                <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
+                <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
+            </div>
+            <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
+            <div>
+                <button type="button">SUSCRIBETE</button>
+            </div>
+        </footer>
 </section>
+
+</body>
+
 
 </html>
