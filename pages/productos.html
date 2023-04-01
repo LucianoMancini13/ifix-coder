@@ -2,79 +2,132 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rockburger - Productos</title>
-    <link rel="icon" href="../img/burger_logoico.ico">
-    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../img/style/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rockburger - Productos</title>
+  <link rel="icon" href="../img/burger_logoico.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../img/style/style.css">
 
 </head>
-<section class="pagina_productos">
 
-    <body>
-        <header class="header">
-            <div class="logo">
-                <a href="../index.html"><img src="../img/burger_logo.png" width="80" alt="Logo"></a>
+<body>
+  <section class="pagina_productos">
+
+    <header class="header">
+      <img class="logo1" src="../img/burger_logo.png" alt="inicio">
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="../img/menu.png" alt="menu-ico">
+      </label>
+      <nav class="nav">
+        <div class="menu1">
+        <ul>
+          <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
+          <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
+          <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
+          <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
+        </ul>
+      </div>
+      <img class="logo2" src="../img/burger_logo.png" alt="logo2">
+      </nav>
+    </header>
+
+    <h1 class="productos">Productos</h1>
+
+    <div class="swiper mySwiper-1">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="slider">
+            <div class="slider-text">
+              <h1>Hamburguesa Bacon</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
+                saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
+                sapiente corporis.</p>
             </div>
-
-            <nav class="nav">
-                <button class="toggle">
-                    <img src="./img/menu2.png" width="35px" height="25px" alt="menu"></a>
-                </button>
-                <ul>
-                    <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
-                    <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
-                    <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
-                    <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
-                </ul>
-            </nav>
-
-        </header>
-
-        <h1 class="productos">Productos</h1>
-
-        <main class="mainprod">
-        
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../img/morada.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/BBQ.png" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../img/pay.png" class="d-block w-100" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-        </main>
-
-        <p>Descripción de la hamburguesa</p>
-
-        <footer class="footerprod">
-            <div class="redes">
-                <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
-                <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
-                <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
+            <div class="slider_img">
+              <img src="../img/hamburguesas_bacon.png" alt="hamburguesa_bacon">
             </div>
-            <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
-            <div>
-                <button type="button">SUSCRIBETE</button>
-            </div>
-        </footer>
-</section>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="slider">
+            <div class="slider-text">
+              <h1>Hamburguesa Pollo</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
+                saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
+                sapiente corporis.</p>
+            </div>
+            <div class="slider_img">
+              <img src="../img/hamburguesas_pollo.png" alt="hamburguesa_pollo">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider">
+            <div class="slider-text">
+              <h1>Hamburguesa Morada</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
+                saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
+                sapiente corporis.</p>
+            </div>
+            <div class="slider_img">
+              <img src="../img/hamburguesas_morada.png" alt="hamburguesa_morada">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slider">
+            <div class="slider-text">
+              <h1>Hamburguesa Special</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
+                saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
+                sapiente corporis.</p>
+            </div>
+            <div class="slider_img">
+              <img src="../img/hamburguesas_special.png" alt="hamburguesa_special">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-pagination"></div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <footer>
+      <div>
+        <button type="button">SUSCRIBETE</button>
+      </div> 
+      <div class="redes"> 
+        <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
+        <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
+        <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
+      </div>
+      <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
+      
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"></script>
+  <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src=""></script>
 </body>
 
 
