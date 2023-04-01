@@ -8,6 +8,7 @@
 }
 
 /*Header*/
+/*Menu desktop*/
 
 header {
     display: flex;
@@ -16,25 +17,9 @@ header {
     height: 80px;
 }
 
-.menu {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
-
-}
-
 .logo1 {
     width: 150px;
 }
-
-.logo2 {
-    width: 0;
-}
-
 
 .nav {
     margin-top: 50px;
@@ -88,6 +73,41 @@ header {
     background-color: #931919;
     height: 2px;
 }
+
+/*Menu responsive*/
+.logo2 {
+    width: 0;
+}
+#menu{
+    display: none;
+}
+
+.menu-ico{
+    width: 25px;
+}
+.label{
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+@media (max-width:991px) {
+    .menu{
+        padding: 20px;
+        justify-content: space-between;
+    }
+}
+
 
 /*Footer*/
 
