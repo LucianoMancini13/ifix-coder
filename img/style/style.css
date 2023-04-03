@@ -18,7 +18,8 @@ header {
 }
 
 .logo1 {
-    width: 150px;
+    width: 100px;
+    margin-top: 50px;
 }
 
 .nav {
@@ -33,7 +34,7 @@ header {
     margin: 0;
     align-items: center;
     justify-content: end;
-    
+
 }
 
 .nav ul li {
@@ -78,14 +79,16 @@ header {
 .logo2 {
     width: 0;
 }
-#menu{
+
+#menu {
     display: none;
 }
 
-.menu-ico{
+.menu-ico {
     width: 25px;
 }
-.label{
+
+.label {
     cursor: pointer;
     display: none;
 }
@@ -102,7 +105,7 @@ header {
 
 
 @media (max-width:991px) {
-    .menu{
+    .menu {
         padding: 20px;
         justify-content: space-between;
     }
@@ -114,7 +117,7 @@ header {
 footer {
     max-width: 1200px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 200px;
@@ -124,7 +127,7 @@ footer {
 
 footer .redes {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 footer .copyright {
@@ -150,13 +153,18 @@ footer button:hover {
 /*Pagina de inicio (Index.html)*/
 
 .contenedor1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+.fondo_index{
     background-image: url(../210995.jpg);
     background-position: center;
     background-size: cover;
-
 }
 
-body {
+.body_index {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -187,6 +195,9 @@ body {
 }
 
 .contenedor2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -267,29 +278,31 @@ h3 {
 }
 
 /*Pagina Contactanos*/
-.pagina_contacto {
+
+.fondo_contacto {
     background-image: url(../pared.png);
     background-size: cover;
     height: 100vh;
     overflow: hidden;
+}
+.pagina_contacto {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .web_contact {
     color: white;
     font-size: 60px;
-    margin-left: 50px;
+    margin-top: 50px;
 }
-
 .contacto {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 20px;
 }
-
 .contacto img {
     border-style: ridge;
     height: 600px;
@@ -297,15 +310,40 @@ h3 {
 }
 
 .contacto fieldset {
+    font-size: large;
+    font;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 600px;
     height: 600px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #c9c7c7;
     padding: 40px 80px;
 }
 
+#nombre{
+    border-radius: 8px;
+    height: 40px;
+    width: 520px;
+}
+#mail{
+    border-radius: 8px;
+    height: 40px;
+    width: 520px;
+}
+#mensaje{
+    border-radius: 8px;
+    width: 520px;
+}
+.boton_enviar{
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+    
+}
 
 
 /*Pagina Productos*/
@@ -313,7 +351,12 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.fondo_productos{
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
 
 .productos {
     color: white;
@@ -347,5 +390,32 @@ h3 {
     background-color: rgb(255, 3, 3);
     opacity: 1;
 }
+
+/*Pagina Tiendas*/
+.pagina_tiendas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tiendas {
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+.fondo_tiendas{
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+
+
+
 
 /*Menú responsive*/

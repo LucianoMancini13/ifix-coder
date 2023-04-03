@@ -14,54 +14,59 @@
 </head>
 
 <body>
-    <section class="pagina_contacto">
-    <header class="header">
-        <div class="logo">
-            <a href="../index.html"><img src="../img/burger_logo.png" width="60" alt="Logo"></a>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
-                <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
-                <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
-                <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="fondo_contacto">
+        <section class="pagina_contacto">
+            <header class="header">
+                <a href="../index.html"><img src="../img/burger_logo.png" class="logo1" alt="Inicio"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="../img/menu.png" class="menu-ico" alt="menu-ico">
+                </label>
+                <nav class="nav">
+                    <div class="menu1">
+                        <ul>
+                            <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
+                            <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
+                            <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
+                            <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
+                        </ul>
+                    </div>
+                    <img class="logo2" src="../img/burger_logo.png" alt="logo2">
+                </nav>
+            </header>
 
-    <h1 class="web_contact">Contactanos</h1>
-    <section class="contacto">
-        <div>
-            <img src="../img/Charly-telefono.jpg" alt="imagen contactanos">
-        </div>
+            <h1 class="web_contact">Contactanos</h1>
+            <section class="contacto">
+                <div>
+                    <img src="../img/Charly-telefono.jpg" alt="imagen contactanos">
+                </div>
 
-        <fieldset>
-            <label for="nombre">Nombre/s y Apellido/s</label><br>
-            <input type="text" id="nombre">
-            <br>
-            <label for="mail">Correo electrónico</label><br>
-            <input type="mail" id="mail">
-            <br>
-            <label for="mensaje">Dejanos tu mensaje</label><br>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </section>
+                <fieldset>
+                    <label for="nombre"> <strong> Nombre/s y Apellido/s</strong></label>
+                    <input type="text" id="nombre">
+
+                    <label for="mail"> <strong> Correo electrónico</strong></label>
+                    <input type="mail" id="mail">
+                    
+                    <label for="mensaje"> <strong> Dejanos tu mensaje</strong></label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    
+                    <input type="submit" value="Enviar" class="boton_enviar">
+                </fieldset>
+            </section>
+            <footer>
+                <div>
+                    <button type="button">SUSCRIBETE</button>
+                </div>
+                <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
+                <div class="redes">
+                    <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
+                    <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
+                    <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
+                </div>
+            </footer>
+        </section>
+    </div>
 </body>
-
-<footer>
-    <div class="redes">
-        <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
-        <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
-        <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
-    </div>
-    <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
-    <div>
-        <button type="button">SUSCRIBETE</button>
-    </div>
-
-</footer>
-</section>
 
 </html>
