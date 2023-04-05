@@ -159,9 +159,12 @@ footer button:hover {
 
 }
 .fondo_index{
-    background-image: url(../210995.jpg);
+    background-image: url(../210996.png);
     background-position: center;
-    background-size: cover;
+    background-size: cover;   
+}
+.menu-ico{
+    display: none;
 }
 
 .body_index {
@@ -183,13 +186,13 @@ footer button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 90px;
+    padding: 50px 0;
     overflow: hidden;
 }
 
 .banner_textos h1 {
     color: white;
-    font-size: 180px;
+    font-size: 150px;
     text-align: center;
     padding: 0px 0px;
 }
@@ -245,7 +248,7 @@ h3 {
 
 @media (max-width: 1600px) {
     .banner_textos h1 {
-        font-size: 160px;
+        font-size: 150px;
     }
 
     .banner_textos p {
@@ -399,7 +402,11 @@ h3 {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.grupo_tiendas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .tiendas {
     color: white;
     font-size: 60px;
@@ -411,11 +418,77 @@ h3 {
     height: 100vh;
     overflow: hidden;
 }
+.tienda1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
+.tienda2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
 
+.tienda3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.tien1{
+    height: 300px;
+    width: auto;
+}
 
+.tien2{
+    height: 300px;
+    width: auto;
+}
 
+.tien3{
+    height: 300px;
+    width: auto;
+}
 
+/*Pagina Nosotros*/
+.pagina_nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nosotros{
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+.fondo_nosotros{
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.beatles{
+    width: 600px ;
+}
+.descripcion{
+margin-left: 50px;
+font-size: 24px;
+color: white;
+}
 
 
 /*Menú responsive*/
