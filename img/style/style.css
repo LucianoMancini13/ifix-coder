@@ -116,6 +116,7 @@ header {
 
 footer {
     max-width: 1200px;
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -215,14 +216,14 @@ footer button:hover {
     justify-content: space-between;
     gap: 30px;
     margin: 50px;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     border-radius: 25px;
     font-size: 30px;
     height: 300px;
-    width: 400px;
+    width: 320px;
     padding: 25px;
     text-align: center;
 }
@@ -404,8 +405,9 @@ h3 {
 }
 .grupo_tiendas{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+justify-content: space-between;
+    
 }
 .tiendas {
     color: white;
@@ -442,18 +444,20 @@ h3 {
     padding: 20px;
 }
 .tien1{
-    height: 300px;
-    width: auto;
+   width: 350px;
 }
 
 .tien2{
-    height: 300px;
-    width: auto;
+    width: 350px;
 }
 
 .tien3{
-    height: 300px;
-    width: auto;
+    width: 350px;
+}
+
+.geo{
+    color: white;
+    font-size: 24px;
 }
 
 /*Pagina Nosotros*/
