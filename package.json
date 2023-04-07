@@ -1,0 +1,13 @@
+{
+  "name": "prentrega-9-2-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-scss": "sass --watch style/scss/style.scss style/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
