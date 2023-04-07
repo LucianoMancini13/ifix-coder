@@ -160,7 +160,7 @@ footer button:hover {
 
 }
 .fondo_index{
-    background-image: url(../210996.png);
+    background-image: url(../img/210996.png);
     background-position: center;
     background-size: cover;   
 }
@@ -220,12 +220,20 @@ footer button:hover {
 }
 
 .card {
+    display: table;
     border-radius: 25px;
     font-size: 30px;
     height: 300px;
     width: 320px;
     padding: 25px;
     text-align: center;
+    overflow: hidden;
+}
+.card p{
+    display: table-cell;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .quedicen {
@@ -284,7 +292,7 @@ h3 {
 /*Pagina Contactanos*/
 
 .fondo_contacto {
-    background-image: url(../pared.png);
+    background-image: url(../img/pared.png);
     background-size: cover;
     height: 100vh;
     overflow: hidden;
@@ -315,7 +323,6 @@ h3 {
 
 .contacto fieldset {
     font-size: large;
-    font;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
