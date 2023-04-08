@@ -49,6 +49,11 @@ header {
   padding: 5px;
 }
 
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
 .enlace {
   margin: 10px;
   padding: 5px 10px;
@@ -73,7 +78,6 @@ header {
   height: 2px;
 }
 
-/*Menu responsive*/
 /*Footer*/
 footer {
   max-width: 1200px;
@@ -122,10 +126,6 @@ footer button:hover {
   background-image: url(../img/210996.png);
   background-position: center;
   background-size: cover;
-}
-
-.menu-ico {
-  display: none;
 }
 
 .body_index {
@@ -444,14 +444,8 @@ h3 {
 }
 
 /*Responsive*/
-@media (max-width: 422px) {
+@media screen and (max-width: 422px) {
   /*Nav*/
-  .menu-ico {
-    display: block;
-    position: fixed;
-    right: 20px;
-    top: 30px;
-  }
   .logo1 {
     width: 50px;
     position: fixed;
@@ -461,32 +455,65 @@ h3 {
   }
   header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
+    padding: 2rem;
+    background-color: #000000;
   }
-  .nav ul {
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    bottom: 0;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    gap: 1rem;
+  }
+  .nav .nav-list {
+    list-style-type: none;
+    display: flex;
     flex-direction: column;
     justify-content: start;
-    margin: 0;
-    background: none;
-    position: fixed;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px 0;
-    height: calc(100% - 60px);
-    overflow-y: auto;
-    left: 100%;
-    transition: left 0.3s;
+    align-items: end;
+    gap: 1rem;
   }
-  .nav-menu_visibe {
-    left: 0;
+  .nav .nav-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 10px;
+  }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .abrir-menu {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 2rem;
+  }
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    background: none;
+    color: white;
+    font-size: 2rem;
   }
   .enlace {
     background: none;
     color: white;
-    margin: 10px;
+    margin: 0px;
     padding: 5px 10px;
     border-radius: 7px;
   }
@@ -504,28 +531,6 @@ h3 {
   .boton:hover {
     background-color: #931919;
     height: 2px;
-  }
-  .logo2 {
-    width: 0;
-  }
-  #menu {
-    display: none;
-  }
-  .menu-ico {
-    width: 25px;
-  }
-  .label {
-    cursor: pointer;
-    display: none;
-  }
-  .menu {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 1000;
   }
   /*Footer*/
   footer {
