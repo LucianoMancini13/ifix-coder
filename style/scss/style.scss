@@ -321,32 +321,103 @@ h3 {
     margin-top: 50px;
 }
 
-.swiper-button-prev::after {
-    font-size: 25px;
+#conteItemsCarrusel {
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.itemCarrusel {
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    display: flex;
+    height: 100%;
+
+    img {
+        height: 100%;
+    }
 
 }
 
-.swiper-button-next::after {
-    font-size: 25px;
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    i {
+        color: white;
+        font-size: 24px;
+    }
 }
 
-.swiper-button-prev {
-    color: #ffffff;
+#tarjetaCarrusel-1 {
+    background-color: #df2d2d;
 }
 
-.swiper-button-next {
-    color: #ffffff;
+#tarjetaCarrusel-2 {
+    background-color: #df2d2d;
 }
 
-.swiper-pagination-bullet {
-    background-color: white;
-    opacity: 1;
+#tarjetaCarrusel-3 {
+    background-color: #df2d2d;
 }
 
-.swiper-pagination-bullet-active {
-    background-color: rgb(255, 3, 3);
-    opacity: 1;
+#tarjetaCarrusel-4 {
+    background-color: #df2d2d;
 }
+
+a {
+    text-decoration: none;
+}
+
+#contePuntos {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+
+    a {
+        color: white;
+        font-size: 80px;
+    }
+
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+    gap: 20px;
+    h1 {
+        color: white;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    ul {
+        li {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            i {
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
 
 /*Pagina Tiendas*/
 .pagina_tiendas {
@@ -443,12 +514,13 @@ h3 {
 .principal {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
 .beatles {
-    width: 600px;
+    height: 600px;
+
 }
 
 .descripcion {
@@ -479,23 +551,24 @@ h3 {
     }
 
     .nav {
-opacity: 0;
-visibility: hidden;
+        opacity: 0;
+        visibility: hidden;
 
-display:none;
-display: flex;
-justify-content: start;
-flex-direction: column;
-align-items: end;
-position: absolute;
-top: 0;
-right: 0;
-background-color: #000000;
-bottom: 0;
-padding: 2rem;
-box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
+        display: none;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000000;
+        bottom: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         gap: 1rem;
-.nav-list {
+
+        .nav-list {
             list-style-type: none;
             display: flex;
             flex-direction: column;
@@ -513,27 +586,28 @@ box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
         }
     }
 
-.nav.visible{
-    opacity: 1;
-    visibility: visible;
-}
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
 
-.abrir-menu{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    border: 0;
-    background: none;
-    color: white;
-    font-size: 2rem;
-}
-.cerrar-menu{
-    display: block;
-    border: 0;
-    background: none;
-    color: white;
-    font-size: 2rem;
-}
+    .abrir-menu {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        border: 0;
+        background: none;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        background: none;
+        color: white;
+        font-size: 2rem;
+    }
 
 
     .enlace {
@@ -555,7 +629,7 @@ box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
         padding: 5px 10px;
         border-radius: 7px;
         transition: height 2s;
-        
+
     }
 
     .boton:hover {

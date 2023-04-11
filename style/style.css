@@ -310,30 +310,92 @@ h3 {
   margin-top: 50px;
 }
 
-.swiper-button-prev::after {
-  font-size: 25px;
+#conteItemsCarrusel {
+  height: 400px;
+  width: auto;
+  overflow: hidden;
+  margin-top: 30px;
 }
 
-.swiper-button-next::after {
-  font-size: 25px;
+.itemCarrusel {
+  height: 400px;
+  width: auto;
+  position: relative;
 }
 
-.swiper-button-prev {
-  color: #ffffff;
+.tarjetaCarrusel {
+  display: flex;
+  height: 100%;
+}
+.tarjetaCarrusel img {
+  height: 100%;
 }
 
-.swiper-button-next {
-  color: #ffffff;
+.flechasCarrusel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.flechasCarrusel i {
+  color: white;
+  font-size: 24px;
 }
 
-.swiper-pagination-bullet {
-  background-color: white;
-  opacity: 1;
+#tarjetaCarrusel-1 {
+  background-color: #df2d2d;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: rgb(255, 3, 3);
-  opacity: 1;
+#tarjetaCarrusel-2 {
+  background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-3 {
+  background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-4 {
+  background-color: #df2d2d;
+}
+
+a {
+  text-decoration: none;
+}
+
+#contePuntos {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+#contePuntos a {
+  color: white;
+  font-size: 80px;
+}
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.detalle h1 {
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.detalle ul li {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.detalle ul li i {
+  color: white;
+  font-size: 24px;
 }
 
 /*Pagina Tiendas*/
@@ -430,11 +492,11 @@ h3 {
 .principal {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .beatles {
-  width: 600px;
+  height: 600px;
 }
 
 .descripcion {

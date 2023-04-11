@@ -21,108 +21,110 @@
         <a href="../index.html"><img src="../img/burger_logo.png" class="logo1" alt="Inicio"></a>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
-                <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
-                <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
-                <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
-            </ul>                        
+          <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+          <ul class="nav-list">
+            <li><a href="../pages/productos.html" class="enlace">Productos</a></li>
+            <li><a href="../pages/nosotros.html" class="enlace">Nosotros</a></li>
+            <li><a href="../pages/tiendas.html" class="enlace">Tiendas</a></li>
+            <li><a href="../pages/contactanos.html" class="boton">Contactanos</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
       <h1 class="productos">Productos</h1>
 
-      <div class="swiper mySwiper-1">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="slider">
-              <div class="slider-text">
-                <h1>Hamburguesa Bacon</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
-                  saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
-                  sapiente corporis.</p>
-              </div>
-              <div class="slider_img">
-                <img src="../img/hamburguesas_bacon.png" alt="hamburguesa_bacon">
-              </div>
+      <div id="conteItemsCarrusel">
+        <div class="itemCarrusel" id="itemCarrusel-1">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+            <img src="../img/hamburguesas_bacon.png" alt="bacon">
+            <div class="detalle">
+              <h1>Ballbreaker</h1>
+              <ul>
+                <li>
+                  <i>- Panceta, mucha panceta</i>
+                  <i>- Doble chedar</i>
+                  <i>- Hamburgesa de carne de 84 grs</i>
+                  <i>- Rueda de tomate</i>
+                  <i>- Colchon de lechuga</i>
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div class="slider">
-              <div class="slider-text">
-                <h1>Hamburguesa Pollo</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
-                  saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
-                  sapiente corporis.</p>
-              </div>
-              <div class="slider_img">
-                <img src="../img/hamburguesas_pollo.png" alt="hamburguesa_pollo">
-              </div>
-            </div>
+          <div class="flechasCarrusel">
+            <a href="#itemCarrusel-4">
+              <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
+            <a href="#itemCarrusel-2">
+              <i class="bi bi-arrow-right-square-fill"></i>
+            </a>
           </div>
-
-          <div class="swiper-slide">
-            <div class="slider">
-              <div class="slider-text">
-                <h1>Hamburguesa Morada</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
-                  saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
-                  sapiente corporis.</p>
-              </div>
-              <div class="slider_img">
-                <img src="../img/hamburguesas_morada.png" alt="hamburguesa_morada">
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="slider">
-              <div class="slider-text">
-                <h1>Hamburguesa Special</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore aspernatur vel blanditiis
-                  saepe necessitatibus aut neque quae eos laudantium deserunt beatae ab ratione unde rerum, iusto ex
-                  sapiente corporis.</p>
-              </div>
-              <div class="slider_img">
-                <img src="../img/hamburguesas_special.png" alt="hamburguesa_special">
-              </div>
-            </div>
-          </div>
-
-
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-pagination"></div>
         </div>
 
+        <div class="itemCarrusel" id="itemCarrusel-2">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+           <img src="../img/hamburguesas_morada.png" alt="morada">
+          </div>
+          <div class="flechasCarrusel">
+            <a href="#itemCarrusel-1">
+              <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
+            <a href="#itemCarrusel-3">
+              <i class="bi bi-arrow-right-square-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrusel" id="itemCarrusel-3">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+            <img src="../img/hamburguesas_pollo.png" alt="pollo">
+          </div>
+          <div class="flechasCarrusel">
+            <a href="#itemCarrusel-2">
+              <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
+            <a href="#itemCarrusel-4">
+              <i class="bi bi-arrow-right-square-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div class="itemCarrusel" id="itemCarrusel-4">
+          <div class="tarjetaCarrusel" id="tarjetaCarrusel-4">
+            <img src="../img/hamburguesas_special.png" alt="special">
+          </div>
+          <div class="flechasCarrusel">
+            <a href="#itemCarrusel-3">
+              <i class="bi bi-arrow-left-square-fill"></i>
+            </a>
+            <a href="#itemCarrusel-1">
+              <i class="bi bi-arrow-right-square-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="contePuntos">
+        <a href="#itemCarrusel-1">.</a>
+        <a href="#itemCarrusel-2">.</a>
+        <a href="#itemCarrusel-3">.</a>
+        <a href="#itemCarrusel-4">.</a>
       </div>
 
+  
 
-
-
-
-
-
-
-      <footer>
-        <div>
-          <button type="button">SUSCRIBETE</button>
-        </div>
-        <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
-        <div class="redes">
-          <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
-          <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
-          <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
-        </div>
-      </footer>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"></script>
-    <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-    <script src=""></script>
+  <footer>
+    <div>
+      <button type="button">SUSCRIBETE</button>
+    </div>
+    <p class="copyright"><span> 2023 Rockburger. Todos los derechos reservados.</span></p>
+    <div class="redes">
+      <img src="../img/face.png" alt="logo facebook" width="40px" height="40px">
+      <img src="../img/insta.png" alt="logo instagram" width="40px" height="40px">
+      <img src="../img/twitter.png" alt="logo twitter" width="40px" height="40px">
+    </div>
+  </footer>
+  </section>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"></script>
+  <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+  <script src=""></script>
   </div>
   <script src="../script.js"></script>
 </body>
