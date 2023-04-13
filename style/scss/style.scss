@@ -398,18 +398,21 @@ a {
     display: flex;
     flex-direction: column;
     align-items: start;
-    
+
     gap: 20px;
+
     h1 {
         color: white;
         margin-top: 40px;
         margin-left: 50px;
     }
+
     ul {
         li {
             display: flex;
             flex-direction: column;
             margin-left: 20px;
+
             i {
                 color: white;
                 font-size: 24px;
@@ -536,7 +539,7 @@ a {
 
     .logo1 {
         width: 50px;
-        position: fixed;
+       
         left: 0;
         top: 0;
         margin: 10px;
@@ -685,7 +688,7 @@ a {
     }
 
 
-    /*index*/
+    /*index responsive*/
 
 
     .fondo_index {
@@ -799,3 +802,212 @@ a {
         text-align: center;
     }
 }
+
+/*Pagina Contactanos responsive*/
+
+.fondo_contacto {
+    background-image: url(../img/pared.png);
+    background-size: cover;
+    height: 100%;
+
+}
+
+.pagina_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
+
+.web_contact {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
+}
+
+.contacto img {
+    border-style: ridge;
+    height: auto;
+    width: 350px;
+}
+
+.contacto fieldset {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 420px;
+    border-radius: 10px;
+    background-color: #c9c7c7;
+    padding: 40px 80px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 14px;
+    padding: 5px;
+}
+
+#nombre {
+    border-radius: 8px;
+    height: 40px;
+    width: 330px;
+}
+
+#mail {
+    border-radius: 8px;
+    height: 40px;
+    width: 330px;
+}
+
+#mensaje {
+    border-radius: 8px;
+    height: 200px;
+    width: 330px;
+
+}
+
+.boton_enviar {
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+
+}
+
+/*Pagina Productos responsive*/
+
+.pagina_productos {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.fondo_productos {
+    background-color: #000000;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+.productos {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#conteItemsCarrusel {
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.itemCarrusel {
+    height: 300px;
+    width: auto;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    display: flex;
+    height: 100%;
+
+    img {
+        height: 100vh;
+    }
+
+}
+
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    i {
+        color: white;
+        font-size: 24px;
+    }
+}
+
+#tarjetaCarrusel-1 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-2 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-3 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-4 {
+    background-color: #df2d2d;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contePuntos {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+
+    a {
+        color: white;
+        font-size: 80px;
+    }
+
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+
+    h1 {
+        color: white;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    ul {
+        li {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            i {
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
