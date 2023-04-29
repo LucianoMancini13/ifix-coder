@@ -1,0 +1,530 @@
+/*Header*/
+/*Menu desktop*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo1 {
+    width: 100px;
+    margin-top: 50px;
+}
+
+.nav {
+    margin-top: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.nav ul li {
+    font-size: relative;
+    color: white;
+    display: block;
+    margin: 5px;
+}
+
+.nav ul li a {
+    text-decoration-line: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.enlace {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+
+.enlace:hover {
+    background-color: #df2d2d;
+    transition: 0.3s;
+    gap: 2rem;
+}
+
+.boton {
+    background-color: #df2d2d;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: height 2s;
+}
+
+.boton:hover {
+    background-color: #931919;
+    height: 2px;
+}
+
+/*Footer*/
+
+footer {
+    max-width: 1200px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: white;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+footer .redes {
+    display: flex;
+    gap: 20px;
+}
+
+footer .copyright {
+    text-align: center;
+    margin: 0px;
+}
+
+footer button {
+    border-radius: 30px;
+    border-color: #ffffff;
+    padding: 10px 20px;
+    color: white;
+    background-color: #df2d2d;
+}
+
+footer button:hover {
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #fd4040;
+}
+
+/*Pagina de inicio (Index.html)*/
+
+.contenedor1 {
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.fondo_index {
+    background-image: url(../img/210996.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.body_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+}
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.banner_textos h1 {
+    color: white;
+    font-size: 150px;
+    text-align: center;
+    padding: 0px 0px;
+}
+
+.contenedor2 {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 70px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: table;
+    border-radius: 25px;
+    font-size: 30px;
+    height: 300px;
+    width: 320px;
+    padding: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card p {
+    display: table-cell;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.quedicen {
+    font-size: 60px;
+    color: white;
+}
+
+.texto {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 120px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+
+}
+
+.banner_textos p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Pagina Contactanos*/
+
+.fondo_contacto {
+    background-image: url(../img/pared.png);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pagina_contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.web_contact {
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.contacto img {
+    border-style: ridge;
+    height: 600px;
+    width: auto;
+}
+
+.contacto fieldset {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    background-color: #c9c7c7;
+    padding: 40px 80px;
+}
+
+#nombre {
+    border-radius: 8px;
+    height: 40px;
+    width: 520px;
+}
+
+#mail {
+    border-radius: 8px;
+    height: 40px;
+    width: 520px;
+}
+
+#mensaje {
+    border-radius: 8px;
+    width: 520px;
+}
+
+.boton_enviar {
+    margin-top: 10px;
+    border-radius: 8px;
+    height: 50px;
+    width: 100px;
+
+}
+
+
+/*Pagina Productos*/
+.pagina_productos {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fondo_productos {
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.productos {
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+#conteItemsCarrusel {
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.itemCarrusel {
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    display: flex;
+    height: 100%;
+
+    img {
+        height: 100%;
+    }
+
+}
+
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+    i {
+        color: white;
+        font-size: 24px;
+    }
+}
+
+#tarjetaCarrusel-1 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-2 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-3 {
+    background-color: #df2d2d;
+}
+
+#tarjetaCarrusel-4 {
+    background-color: #df2d2d;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contePuntos {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    height: 10px;
+
+    a {
+        color: white;
+        font-size: 80px;
+    }
+
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 20px;
+
+    h1 {
+        color: white;
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    ul {
+        li {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+
+            i {
+                color: white;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+/*Pagina Tiendas*/
+.pagina_tiendas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grupo_tiendas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.tiendas {
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.fondo_tiendas {
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.tienda1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.tienda2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.tienda3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.tien1 {
+    width: 350px;
+}
+
+.tien2 {
+    width: 350px;
+}
+
+.tien3 {
+    width: 350px;
+}
+
+.geo {
+    color: white;
+    font-size: 24px;
+}
+
+/*Pagina Nosotros*/
+.pagina_nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nosotros {
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+.fondo_nosotros {
+    background-color: #000000;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.beatles {
+    height: 600px;
+
+}
+
+.descripcion {
+    margin-left: 50px;
+    font-size: 24px;
+    color: white;
+    display: inline-flex;
+}
